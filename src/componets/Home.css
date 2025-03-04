@@ -1,0 +1,29 @@
+.job-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  @media (min-width: 1024px) {
+    .job-container {
+      justify-content: space-between;
+    }
+    .job-container > * {
+      width: calc(33.33% - 20px);
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .job-container > * {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .job-container > * {
+      width: 100%;
+    }
+  }
+  
